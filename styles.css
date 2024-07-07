@@ -1,33 +1,270 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: #e9e9e9;
 }
 
 main {
-background-color: aqua;
-max-width: 1400px;
-margin: 0 auto;
-min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  font-size: 12px;
+  position: relative;
 }
+
 /* SECTION LOGO (REDIRECTION TO PERSONAL GITHUB) */
-
 nav {
-    display: flex;
-    background-color: #f0f0f0;
-    height: 60px;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  background-color: #f0f0f0;
+  height: 60px;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.ivnovaLogo{
-    display: flex;
-    gap: 10px;
-    align-items: center;
+.login{
+    color: #96BB7C;
+}
+
+.joinUs{
+    background-color: #96BB7C;
+    padding: 5px;
+    color: #f0f0f0;
+    border-radius: 3px;
+}
+
+.ivnovaLogo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 a {
-    text-decoration: none;
-    color: #000000;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* SECTION HEADER */
+.header1 {
+  background-color: #ddf4ff;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: hidden;
+  justify-content: flex-end;
+}
+
+.headerBtns{
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.btnHeader{
+    display: block;
+    background-color: #96BB7C;
+    color: #f0f0f0;
+    width: 120px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btnHeader:nth-child(even){
+    background-color: transparent;
+    border: solid 1px #96BB7C;
+    color: #96BB7C;
+}
+
+.infoHeader{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 40px;
+}
+
+.greenText{
+    color: #96BB7C;
+}
+
+h4{
+color: #737373;
+font-size: 14px;
+}
+
+/* IMAGE INFORMATION TO HEADER SECTION  */
+.imageHeader {
+  height: 330px;
+  width: 100%;
+}
+
+.imageHeader img{
+    object-fit: cover;
+    width: 100%;
+}
+
+/* SECTION STADISTICS */
+.stadisticsSection{
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.dataStadistics{
+    width: 130px;
+}
+
+.dataStadistics h2{
+    color: #96BB7C;
+}
+
+.dataStadistics p{
+    font-size: 10px;
+}
+
+/* SECTION INFO COURSES */
+.infoCourses{
+    height: 100%;
+    background-color: #FFF2F3;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    gap: 20px;
+}
+
+.containerCardsCourses{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.courseTitle::after{
+    content: "";
+    display: block;
+    background-color: #E74040;
+    width: 40px;
+    height: 2px;
+    margin:20px 0 ;
+}
+
+.cardCourses{
+    background-color: #ffffff;
+    width: 250px;
+    height: 180px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bgIcons{
+    background-color: #FFF2F3;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgIcons .bx{
+    font-size: 30px;
+    color: #E74040;
+}
+
+.cardCourses p{
+    color: #828282;
+}
+
+/* FOOTER SECTION */
+footer{
+    background-color: #f0f0f0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+footer .bx{
+    font-size: 20px ;
+}
+
+.whatsApp{
+    position: fixed;
+    font-size: 40px;
+    color: #96BB7C;
+    bottom: 10px;
+    cursor: pointer;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.bxl-whatsapp{
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+}
+
+@media (min-width: 900px){
+    /* SECTION LOGO (REDIRECTION TO PERSONAL GITHUB) */
+    .joinUs{
+        padding: 5px 15px;
+    }
+
+    /* SECTION HEADER */
+.header1 {
+    flex-direction: row;
+  }
+  
+  .infoHeader{
+    justify-content: center;
+    width: 50%;
+    gap: 25px;
+  }
+
+.imageHeader{
+    width: 50%;
+    height: 100%;
+}
+
+/* SECTION STADISTICS */
+.stadisticsSection{
+    gap: 30px;
+    padding: 50px;
+}
+
+.dataStadistics{
+    width: 130px;
+}
+
+.dataStadistics h2 {
+    font-size: 30px;
+}
+
+/* SECTION INFO COURSES */
+.containerCardsCourses{
+    flex-direction: row;
+}
+
+.infoCourses h2{
+    padding: 0 20px;
+    font-size: 30px;
+}
+.bxl-whatsapp{
+    right: 30px;
+}
 }
