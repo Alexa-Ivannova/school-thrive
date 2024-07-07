@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+background-color: aqua;
+max-width: 1400px;
+margin: 0 auto;
+min-height: 100vh;
+}
+/* SECTION LOGO (REDIRECTION TO PERSONAL GITHUB) */
+
+nav {
+    display: flex;
+    background-color: #f0f0f0;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ivnovaLogo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
